@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Shopify</title>
+  </head>
+  <body class="body">
+      <style>
+          .backColor {
+              background-color: #F1BEFE;
+          }
+          .displayImg {
+              display: none;
+          }
+      </style>
+    <!-- EX1: Add an h1 tag with the name of your shop -->
+    <h1 class="title-shop" style="text-align: center;">Shopify 👜</h1>
+    <button onclick="headerChange()" type="button" class="headerChanger btn btn-success">Change header</button>
+    <!-- EX2: Add a TABLE with the top 5 products of your shop -->
+    <button onclick="colorChange()" style="float: right;" type="button" class="colorChanger btn btn-primary">Change color</button>
+    <div class="d-flex  justify-content-around align-items-center">
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.coffeedesk.pl/photos/products/large/86d7fb2b6b86a9b39062ba3ecac8ebb5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Gevi Espresso Machines 20 Bar Fast Heating Automatic Cappuccino Coffee Maker with Foaming Milk Frother Wand for Espresso </p>
+              <a href="https://www.amazon.com/Gevi-Automatic-Cappuccino-Removable-Temperature/dp/B09DXZ9R4Y/ref=sr_1_1_sspa?dchild=1&keywords=coffee+machine&qid=1635863792&sr=8-1-spons&psc=1&smid=A17JQKQ6YXFSH6&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE1MFo1WlJTNzQ3SlcmZW5jcnlwdGVkSWQ9QTA3MzM1MTYxVFVVNEVBR0VUOVdIJmVuY3J5cHRlZEFkSWQ9QTAyMTg2ODJHVkMwS0ZCV09TTTUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/33/3301041/Laptop-APPLE-MacBook-Pro-16-front.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray </p>
+              <a href="https://www.amazon.com/Apple-MacBook-13-inch-256GB-Storage/dp/B08N5N6RSS/ref=lp_16225009011_1_11?dchild=1" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/29/2918874/Biurko-HUZARO-Hero-5.0-Bialy-skos-lewy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">End Table 1 Tier Drawer Living Room Bedroom Sofa Side Table Easy Pull Fabric Nightstands </p>
+              <a href="https://www.amazon.com/Bedroom-Nightstands-Bedside-Furniture-College/dp/B093754T8W/ref=sr_1_2_sspa?dchild=1&qid=1635864138&s=kitchen-intl-ship&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQVNQQk8zVlAwUDhDJmVuY3J5cHRlZElkPUEwNjIxMTU3NFlLWktHOVEyOUM1JmVuY3J5cHRlZEFkSWQ9QTA4MDAyMDYyTzRVV0tLWlZOTTFSJndpZGdldE5hbWU9c3BfYXRmX2Jyb3dzZSZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://cdn.shopify.com/s/files/1/0552/0854/2388/products/product-image-1613927622_720x.jpg?v=1616258183" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">WOPET Automatic Cat Feeder,7L WiFi Enabled Smart Food Dispenser for Cats Dogs</p>
+              <a href="https://www.amazon.com/WOPET-Automatic-Enabled-Dispenser-Recorder/dp/B08YY5FYTF/ref=lp_21221447011_1_1?dchild=1" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+    </div>
+    <div class="input-group mb-3 container-sm">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+      </div>
+      <button onclick="hideImages()" class="hideImages btn btn-primary">Image</button>
+    <footer style="color: gray; text-align: center;">
+        <small class="footerText">&copy; 2021. Warsaw, Poland.</small>
+        <button onclick="changeFooter()" type="button" class="changeFooter btn btn-outline-secondary">Change address</button>
+    </footer>
+
+
+
+    
+
+    <script src="./M1-D7.js"></script>
+  </body>
+</html>
